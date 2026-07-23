@@ -30,6 +30,7 @@ export default function Navbar() {
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-brown/80">
           <Link href="/products" className="hover:text-gold transition-colors">Shop</Link>
+          <Link href="/about" className="hover:text-gold transition-colors">About</Link>
           <Link href="/products?category=sarees" className="hover:text-gold transition-colors">Sarees</Link>
           <Link href="/products?category=dupattas" className="hover:text-gold transition-colors">Dupattas</Link>
         </nav>
@@ -71,6 +72,7 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden flex flex-col gap-3 px-6 pb-4 text-brown/90 text-sm font-medium">
           <Link href="/products" onClick={() => setMenuOpen(false)}>Shop</Link>
+          <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
           <Link href="/products?category=sarees" onClick={() => setMenuOpen(false)}>Sarees</Link>
           <Link href="/products?category=dupattas" onClick={() => setMenuOpen(false)}>Dupattas</Link>
         </div>

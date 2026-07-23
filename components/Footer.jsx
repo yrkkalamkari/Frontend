@@ -15,9 +15,9 @@ export default function Footer() {
         <div>
           <h4 className="text-cream font-semibold mb-3">About</h4>
           <ul className="space-y-2">
-            <li>Our story</li>
-            <li>Artisans</li>
-            <li>Sustainability</li>
+            <li><Link href="/about#our-story">Our story</Link></li>
+            <li><Link href="/about#artisans">Artisans</Link></li>
+            <li><Link href="/about#sustainability">Sustainability</Link></li>
           </ul>
         </div>
         <div>

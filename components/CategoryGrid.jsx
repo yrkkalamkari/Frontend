@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function CategoryGrid({ categories = [] }) {
-  if (categories.length === 0) return null;
+  if (!Array.isArray(categories) || categories.length === 0) return null;
   return (
     <section className="max-w-7xl mx-auto px-6 py-10">
       <h2 className="font-display text-2xl text-brown mb-6">Shop by category</h2>
